@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Wabacus官方网站</title>
+<meta name="keywords"
+	content="wabacus, java, javaee, 快速开发, 框架, framework" />
+<meta name="description"
+	content="Wabacus框架是完整的JavaEE快速开发框架，采用面向声明的编程思想，不用编程或极少编辑就可以实现复杂的数据展示、数据编辑、表单等功能，比传统的面向过程、面向对象等方式的开发效率提高5倍以上，代码量减少60%以上。" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css"
+	media="screen" />
+<link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="templatemo_header_wrapper">
+		<div id="templatemo_header">
+			<div id="site_title">
+				<a href="http://www.wabacus.org/"><img
+					src="images/templatemo_logo.png" alt="logo" /><span>JavaEE&nbsp;快&nbsp;速&nbsp;开&nbsp;发&nbsp;框&nbsp;架</span></a>
+			</div>
+			<!-- end of site_title -->
+			<div id="templatemo_menu">
+				<ul style="width: 900px">
+					<li><a href="changelist.html" class="current">&lt;&lt;上一页</a></li>
+					<li class="detailpage_title">Wabacus各版本主要更新列表</li>
+					<!-- li class="last"><a href="donate.html" style="float: right;" class="current">下一页&gt;&gt;</a></li-->
+				</ul>
+
+				<!-- div id="search_box">
+                <form action="#" method="post">
+                    <input type="text" value="Search on this website" name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+                  	<input type="submit" name="Search" value="" id="searchbutton" title="Search" />
+                </form>
+            </div-->
+				<div class="cleaner"></div>
+			</div>
+			<div class="cleaner"></div>
+		</div>
+		<!-- end of header -->
+		<div class="cleaner"></div>
+	</div>
+	<div id="templatemo_wrapper">
+		<div id="templatemo_twoside_center">
+			<div id="templatemo_twosidecenter_left">
+
+				<div id="news_box">
+					<ul>
+						<li><b><font color='blue'>4.2版本主要更新列表：</font></b></li>
+					</ul>
+					<ul class="tmo_list">
+						<li>所有报表类型均支持横向扩展数据集</li>
+						<li>解决了所有列表报表类型在数据超长时不会自动折行的问题</li>
+						<li>数据导入支持excel2007版本的数据文件</li>
+						<li>支持大数据量的显示，比如一页显示几千甚至几万条记录</li>
+						<li>支持导出列表报表选中的记录行，支持在服务器端先落地再压缩再导出的导出方式，这样可以支持超大数据的导出操作</li>
+						<li>支持开发人员配置最终的查询报表数据的SQL语句，框架不做任何转换，可以大幅提高报表数据查询性能</li>
+						<li>重构查询下拉框选项数据、输入联想选项数据、自动填充数据的配置，支持单独为它们指定数据源、SQL语句执行方式（即采用statement还是preparedstatement方式执行），支持使用SQL语句、存储过程、JAVA类三种方式查询它们的数据</li>
+						<li>所有弹出窗口的功能都支持弹出前回调函数，并能在回调函数中给弹出URL动态添加参数或者阻止弹出操作，比如editablelist的编辑页面、文件上传、弹出窗口输入框等等</li>
+						<li>扩展文件上传功能，升级文件上传组件包，不再与struts等项目共存时存在文件上传的冲突；支持动态创建不存在的上传目录，支持在文件上传输入框中删除后台文件的删除方式，新增生成文件上传功能的JAVA接口方法</li>
+						<li>所有组件都支持&lt;outerheader/&gt;和&lt;outerfooter/&gt;标签，配置组件外围的静态或动态显示内容</li>
+						<li>重构报表数据查询实现，用户可以更容易地支持从其它非关系型数据库查询报表显示数据</li>
+						<li>完善了服务器端向前台提示信息的接口方法，允许控制提示窗口</li>
+						<li>支持在服务器端设置列表报表哪些记录行不允许选中</li>
+						<li>将显示在页面和下载到数据文件中时的各列显示模式分开，比如某列只显示在页面，但不下载到数据文件中等</li>
+						<li>扩展服务器端向前台提示信息的接口方法，允许提示时控制提示窗口的行为，比如是否自动隐藏，大小等</li>
+					</ul>
+					<div class="cleaner"></div>
+				</div>
+			</div>
+			<div id="templatemo_twosidecenter_right">
+				<div id="news_box">
+
+					<ul>
+						<li><b>4.3版本主要更新列表：</b></li>
+					</ul>
+					<ul class="tmo_list">
+						<li>新增wx_tip()方法的支持，允许多种方式在某个HTML标签周围通过新增层的方式显示提示信息</li>
+						<li>支持采用statement方式执行更新数据的SQL语句，这样就支持在配置的更新SQL语句中直接拼凑，例如update
+							table set column1=@{col}'abc',...；支持在拦截器的执行每个脚本的拦截方法中修改更新语句的SQL语句</li>
+						<li>支持为每个更新脚本配置执行的前置条件，以便在保存时动态决定是否要执行这一个或一批更新数据脚本，这样可以很容易支持“判断某个记录是否存在，如果存在就做修改操作，不存在就做添加操作”的场合</li>
+						<li>支持在&lt;insert/&gt;、&lt;update/&gt;、&lt;delete/&gt;、&lt;button/&gt;的&lt;params/&gt;中定义变量时，支持从本报表或其它绑定保存的报表中取列值或变量值做为本变量的变量值</li>
+						<li>绑定保存多个报表时，支持控制各报表的保存顺序</li>
+						<li>支持可输入下拉框（即组合框）输入框类型，支持依赖其它输入框的子单选框、子复选框配置</li>
+						<li>解决了下拉框关联时，当选中的父下拉框没有对应的子下拉选项数据时，子下拉框不清空选项的BUG</li>
+						<li>扩展了客户端服务器端校验，支持在配置校验方法时允许为校验方法传入动态或常量参数到校验方法中</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="cleaner"></div>
+		</div>
+
+		<div id="templatemo_footer">&copy; 2013 Wabacus All Rights
+			Reserved</div>
+		<!-- end of templatemo_footer -->
+
+	</div>
+
+</body>
+</html>
+

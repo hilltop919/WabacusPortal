@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Wabacus官方网站</title>
+<meta name="keywords" content="wabacus, java, javaee, 快速开发, 框架, framework" />
+<meta name="description" content="Wabacus框架是完整的JavaEE快速开发框架，采用面向声明的编程思想，不用编程或极少编辑就可以实现复杂的数据展示、数据编辑、表单等功能，比传统的面向过程、面向对象等方式的开发效率提高5倍以上，代码量减少60%以上。" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+<link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="templatemo_header_wrapper">
+	<div id="templatemo_header">
+        <div id="site_title">
+            <a href="http://www.wabacus.org/"><img src="images/templatemo_logo.png" alt="logo" /><span>JavaEE&nbsp;快&nbsp;速&nbsp;开&nbsp;发&nbsp;框&nbsp;架</span></a>
+        </div> <!-- end of site_title -->
+        <div id="templatemo_menu">
+            <ul style="width:900px">
+            	 <!--li><a href="changelist.html" class="current">&lt;&lt;上一页</a></li-->
+                <li class="detailpage_title">Wabacus各版本主要更新列表</li>
+                <li class="last"><a href="changelist2.html" style="float: right;" class="current">下一页&gt;&gt;</a></li>
+            </ul>
+            
+            <div class="cleaner"></div>    	
+        </div>
+        <div class="cleaner"></div>
+    </div> <!-- end of header -->
+    <div class="cleaner"></div>
+</div>
+<div id="templatemo_wrapper">
+    <div id="templatemo_twoside_center">
+    	<div id="templatemo_twosidecenter_left">
+        
+        		<div id="news_box">
+            	<ul>
+                	<li>
+                        <b>4.0版本主要更新列表：</b>
+                    </li>
+               </ul>
+                <ul class="tmo_list">
+                    <li>支持一个报表的数据来自于多个数据集，这些数据集可能来自多个数据库、多个数据文件等</li>
+                    <li>支持列表报表和表单的列横向扩展，即动态获取要显示的列</li>
+                    <li>扩展交叉统计报表，支持对普通行分组、树形分组数据的交叉统计功能</li>
+						  <li>提示窗口在以前的ymPrompt组件的基础上，新增了对artDialog组件的支持</li>
+						  <li>支持为列表报表显示辅助行，扩展了报表统计功能，以前只能显示在最后一页的最后一行，现在可以显示在每页的上下位置、最后一页的上下位置等等</li>
+                    <li>扩展输入联想功能，包括：1)、支持指定匹配时是否区分大小写；2)、允许配置隐藏匹配列，并支持在选中回调函数中取到所有参与匹配和不参与匹配的列的数据；3)、支持自己指定匹配方法，方便实现输入拼音匹配汉字的场合；
+                    		4)、支持从JAVA类、资源文件中获取联想选项，也支持直接在配置文件中硬编码选项；5)、扩展查询输入联想的查询条件，支持从url/session中取条件数据</li>
+                    <li>支持tabpanel容器在点击切换标签页时，执行一个JS回调函数，在此函数中可以在新标签页URL中添加和修改参数，并且可以中止切换操作</li>
+						  <li>在&lt;global-jsfiles/&gt;、&lt;local-jsfiles/&gt;以及&lt;page/&gt;的js属性中声明页面要包含的JS文件时，可以指定JS加载顺序</li>
+                    <li>在&lt;insert/&gt;、&lt;update/&gt;、&lt;delete/&gt;中支持使用标准格式的insert/update/delete语句，而不是必须使用wabacus专有格式配置增删改操作；支持存储过程、JAVA类更新后台数据</li>
+                    <li>在&lt;insert/&gt;、&lt;update/&gt;、&lt;delete/&gt;中支持同时更新多个数据源上的数据，比如同时更新多个数据库上的数据等</li>
+						  <li>允许在可编辑报表的拦截器中动态指定某些记录行为只读，动态指定某些单元格为只读</li>
+                    <li>允许在保存前客户端回调函数中修改即将传到后台的保存数据</li>
+                    <li>支持为&lt;button/&gt;配置的任意按钮指定确认操作提示信息，这样点击按钮后会弹出确认提示，并且可以配置点击“确定”和“取消”时各执行的事件</li>
+						  <li>在页面拦截器中支持对保存操作的前后置拦截方法，可以在此拦截方法中控制事务隔离级别、定制事务控制类、产生各绑定保存报表所需的共同数据</li>
+                    <li>重构报表拦截器中保存拦截方法，将原有的六个拦截方法精简为三个，并且可以在这三个拦截方法中捕捉到框架执行保存整个报表、每条记录、每个脚本时抛出的异常</li>
+                    <li>可编辑报表的数据自动填充功能支持用SQL语句、存储过程、JAVA类三种方式获取自动填充数据</li>
+						  <li>优化了数据编辑功能，支持提示可编辑报表哪些列的数据被修改过，当没有对修改过的数据进行保存而进行其它操作时给出“是否放弃修改”的提示</li>
+                </ul>     
+                <div class="cleaner"></div>  
+            </div>
+        </div>
+        <div id="templatemo_twosidecenter_right">
+        		<div id="news_box">
+            	<ul>
+                	<li>
+                        <b>4.1版本主要更新列表：</b>
+                    </li>
+               </ul>
+                <ul class="tmo_list">
+                    <li>支持图形报表类型</li>
+                    <li>支持跨页行选中，即同时选中多页上的记录行进行操作</li>
+                    <li>支持跨页编辑editablelist2/listform报表的数据，即一次修改多页的记录</li>
+						  <li>支持指定editablelist2/listform报表类型添加记录行时的新记录行显示位置，支持添加记录行的回调函数，在此回调函数中可以修改新添加行的样式等</li>
+						  <li>完善editablelist2/editabledetail2报表类型的列格式化功能，允许某列数据在编辑后仍然保持格式化效果，而不会因为编辑数据而丢失</li>
+                    <li>新增两种行选中类型</li>
+                    <li>支持在对报表进行某个操作时，在服务器端的某个阶段向客户端用户弹出“确认”提示窗口，并能根据用户点击“确定”和“取消”进行不同的处理</li>
+                    <li>扩展了客户端服务器端校验功能，支持在校验时获取到任意列的数据，同时新增了失去焦点时进行服务器端校验的功能</li>
+                    <li>编辑数据时新增对自动增长字段类型的支持，而不像之前只能用sequence或uuid做为表的关键字段</li>
+                    <li>解决了&lt;report/&gt;的id属性不能出现下划线_的问题</li>
+                    <li>所有控制样式的styleproperty（比如控制输入框、数据列等）都支持配置url{paramname}或rrequest/request/session{key/key.property}方式指定动态获取样式字符</li>
+                    <li>支持同步和异步两种数据导入方式，支持为所有类型的组件都配置一个或多个数据导入功能</li>
+                    <li>支持显示报表数据前拦截方法，允许在此拦截方法中显示一些自己的内容，或者中断报表的显示，支持获取报表数据的json格式并传给onload回调函数</li>
+                    <li>扩展显示每行、每列数据的拦截方法，在这里可以方便地读写各列的数据，并且支持在拦截方法中动态设置某条记录为行选中状态</li>
+                    <li>支持在&lt;format/&gt;方法中设置标题行的样式和当前数据行的样式，以及设置某列的显示样式，而不是只能在拦截方法中设置</li>
+                    <li>优化了数据编辑时用户体验，不会因为编辑数据自动跳转到第一页，而是仍保持在当前页</li>
+                </ul>     
+                <div class="cleaner"></div>  
+            </div>
+            
+        </div>
+        <div class="cleaner"></div>
+    </div>
+    
+    <div id="templatemo_footer">
+		&copy; 2013 Wabacus All Rights Reserved
+    </div> <!-- end of templatemo_footer -->
+     
+</div>
+
+</body>
+</html>
+
